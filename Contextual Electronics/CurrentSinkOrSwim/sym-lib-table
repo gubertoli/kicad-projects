@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name CSOS)(type Legacy)(uri ${KIPRJMOD}/CSOS.lib)(options "")(descr ""))
+  (lib (name CurrentSinkOrSwim)(type Legacy)(uri ${KIPRJMOD}/CurrentSinkOrSwim.lib)(options "")(descr ""))
+)

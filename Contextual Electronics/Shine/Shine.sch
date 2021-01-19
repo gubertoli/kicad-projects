@@ -1,0 +1,111 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5FF8754A
+P 4825 3550
+F 0 "D1" V 4864 3432 50  0000 R CNN
+F 1 "LED" V 4773 3432 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4825 3550 50  0001 C CNN
+F 3 "~" H 4825 3550 50  0001 C CNN
+	1    4825 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5FF87C18
+P 5275 3550
+F 0 "D2" V 5314 3432 50  0000 R CNN
+F 1 "LED" V 5223 3432 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5275 3550 50  0001 C CNN
+F 3 "~" H 5275 3550 50  0001 C CNN
+	1    5275 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FF88098
+P 4825 3975
+F 0 "R1" H 4895 4021 50  0000 L CNN
+F 1 "200" H 4895 3930 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4755 3975 50  0001 C CNN
+F 3 "~" H 4825 3975 50  0001 C CNN
+	1    4825 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FF88C98
+P 5275 3975
+F 0 "R2" H 5345 4021 50  0000 L CNN
+F 1 "200" H 5345 3930 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5205 3975 50  0001 C CNN
+F 3 "~" H 5275 3975 50  0001 C CNN
+	1    5275 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4825 3700 4825 3825
+Wire Wire Line
+	5275 3700 5275 3825
+Wire Wire Line
+	4825 3400 4825 2750
+Wire Wire Line
+	4825 2750 6575 2750
+Wire Wire Line
+	5275 3400 5275 2900
+Wire Wire Line
+	4825 4125 4825 4275
+Wire Wire Line
+	5275 4275 5275 4125
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5FF89AB8
+P 6775 3650
+F 0 "J1" H 6825 4067 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 6825 3976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 6775 3650 50  0001 C CNN
+F 3 "~" H 6775 3650 50  0001 C CNN
+	1    6775 3650
+	1    0    0    -1  
+$EndComp
+Text Notes 6150 3825 0    50   ~ 0
+3V3\nGPIO2\nGPIO3\nGPIO4\nGND
+Text Notes 7275 3825 0    50   ~ 0
+5V\n5V\nGND\nGPIO14\nGPIO15
+Wire Wire Line
+	4825 4275 5275 4275
+Wire Wire Line
+	5275 4275 6575 4275
+Wire Wire Line
+	6575 4275 6575 3850
+Connection ~ 5275 4275
+Wire Wire Line
+	6575 2750 6575 3450
+Wire Wire Line
+	5275 2900 6475 2900
+Wire Wire Line
+	6475 2900 6475 3550
+Wire Wire Line
+	6475 3550 6575 3550
+NoConn ~ 6575 3650
+NoConn ~ 6575 3750
+NoConn ~ 7075 3450
+NoConn ~ 7075 3550
+NoConn ~ 7075 3650
+NoConn ~ 7075 3750
+NoConn ~ 7075 3850
+$EndSCHEMATC

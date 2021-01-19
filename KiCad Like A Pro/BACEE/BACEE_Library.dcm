@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DS1337_PDv2
+F https://datasheets.maximintegrated.com/en/ds/DS1337-DS1337C.pdf
+$ENDCMP
+#
+#End Doc Library

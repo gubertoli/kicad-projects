@@ -1,0 +1,176 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Generic_Conn_01x02
+#
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# CurrentSinkOrSwim_LMV358
+#
+DEF CurrentSinkOrSwim_LMV358 U 0 0 Y Y 2 L N
+F0 "U" -300 300 60 H V C CNN
+F1 "CurrentSinkOrSwim_LMV358" 100 -200 60 H V L CNN
+F2 "digikey-footprints:DIP-8_W7.62mm" 200 200 60 H I L CNN
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm358" 200 300 60 H I L CNN
+F4 "296-1395-5-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LM358P" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Linear - Amplifiers - Instrumentation, OP Amps, Buffer Amps" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm358" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/texas-instruments/LM358P/296-1395-5-ND/277042" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC OPAMP GP 2 CIRCUIT 8DIP" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+T 0 0 0 60 0 1 0 A Normal 0 C C
+T 0 0 0 60 0 2 0 B Normal 0 C C
+P 2 0 1 0 -150 -100 -100 -100 N
+P 2 0 1 0 -150 100 -100 100 N
+P 2 0 1 0 -125 -75 -125 -125 N
+P 4 0 1 0 -200 200 -200 -200 200 0 -200 200 f
+X ~ 1 300 0 100 L 50 50 1 1 O
+X ~ 2 -300 100 100 R 50 50 1 1 I
+X ~ 3 -300 -100 100 R 50 50 1 1 I
+X GND 4 0 -200 100 U 50 50 1 1 W
+X VCC 8 0 200 100 D 50 50 1 1 W
+X GND 4 0 -200 100 U 50 50 2 1 W
+X ~ 5 -300 -100 100 R 50 50 2 1 I
+X ~ 6 -300 100 100 R 50 50 2 1 I
+X ~ 7 300 0 100 L 50 50 2 1 O
+X VCC 8 0 200 100 D 50 50 2 1 W
+ENDDRAW
+ENDDEF
+#
+# CurrentSinkOrSwim_TC1016
+#
+DEF CurrentSinkOrSwim_TC1016 U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "CurrentSinkOrSwim_TC1016" 0 125 50 H V L CNN
+F2 "" 25 -150 50 H I L CIN
+F3 "" 0 -50 50 H I C CNN
+ALIAS L7806 L7808 L7885 L7809 L7812 L7815 L7818 L7824
+$FPLIST
+ TO?252*
+ TO?263*
+ TO?220*
+$ENDFPLIST
+DRAW
+S -200 75 200 -200 0 1 10 f
+X IN 1 -300 0 100 R 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X OUT 3 300 0 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# freetronics_schematic_MOSFET_N
+#
+DEF freetronics_schematic_MOSFET_N Q 0 0 Y N 1 F N
+F0 "Q" -90 170 60 H V R CNN
+F1 "freetronics_schematic_MOSFET_N" 60 -250 60 H V R CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ *_FET
+ FET_*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -100 -50 100 N
+P 2 0 1 10 0 -150 0 150 N
+P 2 0 1 8 50 0 100 0 N
+P 2 0 1 0 100 -100 0 -100 N
+P 2 0 1 8 100 -100 100 0 N
+P 2 0 1 0 100 100 0 100 N
+P 2 0 1 8 210 30 150 30 N
+P 3 0 1 8 100 -110 180 -110 180 -20 N
+P 3 0 1 8 180 30 180 110 100 110 N
+P 5 0 1 8 50 30 50 -30 0 0 50 30 50 30 N
+P 5 0 1 8 210 -20 150 -20 180 30 210 -20 210 -20 N
+X D D 100 200 100 D 40 40 1 1 P
+X G G -200 0 150 R 40 40 1 1 I
+X S S 100 -200 100 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# freetronics_schematic_POT
+#
+DEF freetronics_schematic_POT VR 0 40 Y N 1 F N
+F0 "VR" 0 -100 50 H V C CNN
+F1 "freetronics_schematic_POT" 0 0 50 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ POT_*
+$ENDFPLIST
+DRAW
+S -150 50 150 -50 0 1 0 N
+P 3 0 1 0 0 50 -20 70 20 70 F
+X 1 1 -250 0 100 R 40 40 1 1 P
+X 2 2 250 0 100 L 40 40 1 1 P
+X W W 0 150 80 D 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

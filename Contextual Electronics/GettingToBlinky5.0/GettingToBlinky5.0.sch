@@ -1,0 +1,207 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GTB5:7555 U1
+U 1 1 5FF8CB2E
+P 5675 3325
+F 0 "U1" H 5625 3350 50  0000 L CNN
+F 1 "7555" H 5575 3425 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5675 3325 50  0001 C CNN
+F 3 "" H 5675 3325 50  0001 C CNN
+	1    5675 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FF8E292
+P 4475 2600
+F 0 "R1" H 4545 2646 50  0000 L CNN
+F 1 "1K" H 4545 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4405 2600 50  0001 C CNN
+F 3 "~" H 4475 2600 50  0001 C CNN
+	1    4475 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FF8EA94
+P 4475 3675
+F 0 "R2" H 4545 3721 50  0000 L CNN
+F 1 "470K" H 4545 3630 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4405 3675 50  0001 C CNN
+F 3 "~" H 4475 3675 50  0001 C CNN
+	1    4475 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FF8F0CA
+P 6800 3675
+F 0 "R3" H 6870 3721 50  0000 L CNN
+F 1 "1K" H 6870 3630 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6730 3675 50  0001 C CNN
+F 3 "~" H 6800 3675 50  0001 C CNN
+	1    6800 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FF8F482
+P 4475 4425
+F 0 "C1" H 4590 4471 50  0000 L CNN
+F 1 "1uF" H 4590 4380 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4513 4275 50  0001 C CNN
+F 3 "~" H 4475 4425 50  0001 C CNN
+	1    4475 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5FF902F0
+P 6800 4375
+F 0 "D1" V 6839 4257 50  0000 R CNN
+F 1 "LED" V 6748 4257 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6800 4375 50  0001 C CNN
+F 3 "~" H 6800 4375 50  0001 C CNN
+	1    6800 4375
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5FF9187B
+P 5700 5075
+F 0 "#PWR0101" H 5700 4825 50  0001 C CNN
+F 1 "GND" H 5705 4902 50  0000 C CNN
+F 2 "" H 5700 5075 50  0001 C CNN
+F 3 "" H 5700 5075 50  0001 C CNN
+	1    5700 5075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3325 3350 3325 2050
+Wire Wire Line
+	3325 2050 4475 2050
+Wire Wire Line
+	5775 2050 5775 2775
+Wire Wire Line
+	5575 2775 5575 2050
+Connection ~ 5575 2050
+Wire Wire Line
+	5575 2050 5775 2050
+Wire Wire Line
+	4475 2050 4475 2450
+Wire Wire Line
+	4475 2750 4475 3125
+Wire Wire Line
+	4475 3825 4475 3875
+Connection ~ 4475 2050
+Wire Wire Line
+	4475 2050 4900 2050
+Wire Wire Line
+	5175 3125 4475 3125
+Connection ~ 4475 3125
+Wire Wire Line
+	4475 4575 4475 4775
+Wire Wire Line
+	4475 4775 5100 4775
+Wire Wire Line
+	5700 4775 5700 5075
+Wire Wire Line
+	3325 3650 3325 4775
+Wire Wire Line
+	3325 4775 4475 4775
+Connection ~ 4475 4775
+Wire Wire Line
+	6175 3275 6800 3275
+Wire Wire Line
+	6800 3275 6800 3525
+Wire Wire Line
+	6800 3825 6800 4225
+Wire Wire Line
+	6800 4525 6800 4775
+Wire Wire Line
+	6800 4775 5700 4775
+Connection ~ 5700 4775
+Wire Wire Line
+	5575 3775 5575 4775
+Connection ~ 5575 4775
+Wire Wire Line
+	5575 4775 5700 4775
+NoConn ~ 5775 3775
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5FF90C17
+P 3325 3550
+F 0 "BT1" H 3443 3646 50  0000 L CNN
+F 1 "CR2032" H 3443 3555 50  0000 L CNN
+F 2 "GettingToBlinky5:S8211-46R" V 3325 3610 50  0001 C CNN
+F 3 "~" V 3325 3610 50  0001 C CNN
+	1    3325 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FF950D3
+P 4900 2050
+F 0 "#FLG0101" H 4900 2125 50  0001 C CNN
+F 1 "PWR_FLAG" H 4900 2223 50  0000 C CNN
+F 2 "" H 4900 2050 50  0001 C CNN
+F 3 "~" H 4900 2050 50  0001 C CNN
+	1    4900 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 2050
+Wire Wire Line
+	4900 2050 5575 2050
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FF954AF
+P 5100 4775
+F 0 "#FLG0102" H 5100 4850 50  0001 C CNN
+F 1 "PWR_FLAG" H 5100 4948 50  0000 C CNN
+F 2 "" H 5100 4775 50  0001 C CNN
+F 3 "~" H 5100 4775 50  0001 C CNN
+	1    5100 4775
+	1    0    0    -1  
+$EndComp
+Connection ~ 5100 4775
+Wire Wire Line
+	5100 4775 5575 4775
+Text Label 5100 2050 0    50   ~ 0
+VDD
+Text Label 4800 3125 0    50   ~ 0
+DIS
+Text Label 4800 3875 0    50   ~ 0
+THR
+Text Label 6500 3275 0    50   ~ 0
+OUT
+Wire Wire Line
+	4475 3125 4475 3525
+Wire Wire Line
+	5050 3275 5050 3425
+Wire Wire Line
+	5050 3425 5175 3425
+Wire Wire Line
+	5050 3275 5175 3275
+Wire Wire Line
+	5050 3425 5050 3875
+Wire Wire Line
+	5050 3875 4475 3875
+Connection ~ 5050 3425
+Connection ~ 4475 3875
+Wire Wire Line
+	4475 3875 4475 4275
+$EndSCHEMATC

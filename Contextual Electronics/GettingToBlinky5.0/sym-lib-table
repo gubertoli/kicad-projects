@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name GTB5)(type Legacy)(uri ${KIPRJMOD}/GTB5.lib)(options "")(descr ""))
+)
