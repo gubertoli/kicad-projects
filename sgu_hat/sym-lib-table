@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name sgu_hat-rescue)(type Legacy)(uri ${KIPRJMOD}/sgu_hat-rescue.lib)(options "")(descr ""))
+  (lib (name MLX90614ESF-AAA-000-TU)(type Legacy)(uri ${KIPRJMOD}/Components/MLX90614ESF-AAA-000-TU/MLX90614ESF-AAA-000-TU.lib)(options "")(descr ""))
+  (lib (name rfid-rc522-module)(type Legacy)(uri ${KIPRJMOD}/Components/rfid-rc522-module.lib)(options "")(descr ""))
+  (lib (name OV9281-Dual-Camera-Board)(type Legacy)(uri ${KIPRJMOD}/Components/Camera/OV9281-Dual-Camera-Board.lib)(options "")(descr ""))
+)

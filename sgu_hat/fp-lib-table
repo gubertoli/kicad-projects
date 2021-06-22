@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name MLX90614ESF-AAA-000-TU)(type KiCad)(uri ${KIPRJMOD}/Components/MLX90614ESF-AAA-000-TU.pretty)(options "")(descr ""))
+)
